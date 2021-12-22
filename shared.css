@@ -1,0 +1,147 @@
+/* global selector */
+* {
+    /* oooh never knew about box-sizing */
+    /* 
+        box-sizing: border-box; 
+        means that the width and height are set at the border level,
+        the default of box-sizing is content-box, which is content level
+        although border-box is way more common, and certainly convenient.
+     */
+     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.main-header {
+    background-color: dodgerblue;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 15;
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: white;
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.main-header__brand img {
+    height: 100%;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 50px);
+    vertical-align: middle;
+}
+
+.main-nav__item {
+    /* displayed inline, but can be styled with block type properties like margins */
+    display: inline-block;
+    margin: 0px 16px
+}
+
+.main-nav__items {
+    margin: 0px;
+    padding: 0;
+    /* list-style: none, removes bullet points */
+    list-style: none;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: peachpuff;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background:coral;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* 
+psuedo classes ":"
+psuedo elements "::"
+ */
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 3px solid peachpuff;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: white;
+    background:blue;
+    border: none;
+}
+
+
+
+.button {
+    background-color: peachpuff;
+    color: blue;
+    font: inherit;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    cursor:pointer;
+}
+
+.button:hover,
+.button:active {
+    background-color: blue;
+    color: white;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.main-footer {
+    background: dodgerblue;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link > a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link > a:hover,
+.main-footer__link > a:active {
+    color: lightblue
+}
