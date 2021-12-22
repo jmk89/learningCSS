@@ -3,7 +3,10 @@ main {
 }
 
 .background {
-    background: url("../images/groupcheams.jpeg");
+    background-image: url("../images/groupcheams.jpeg");
+    background-size:cover;
+    background-position:center;
+    filter:blur(3px) grayscale(80%);
     width: 100%;
     height: 100%;
     position: fixed;
