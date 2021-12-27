@@ -212,3 +212,7 @@ psuedo elements "::"
 .main-footer__link > a:active {
     color: lightblue
 }
+
+.open {
+    display: block !important;
+}
