@@ -1,3 +1,7 @@
+main {
+    padding-top: 1rem;
+}
+
 .testimonial {
     font-size: 1.2rem;
 }
@@ -8,7 +12,7 @@
 } */
 
 .testimonial:first-of-type {
-margin-top: 96px;
+/* margin-top: 96px; */
 }
 
 .testimonial__image-container {

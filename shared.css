@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+main {
+    margin-top: 3.25rem;
+}
+
 .backdrop {
     position:fixed;
     display: none;
@@ -33,6 +37,7 @@ body {
     position: fixed;
     top: 0px;
     z-index: 15;
+    height: 3.5rem;
 }
 
 .main-header>div {
@@ -44,10 +49,13 @@ body {
     color: white;
     text-decoration: none;
     font-weight:bolder;
-    font-size: 32px;
-    height: 32px;
+    height: 2.5rem;
     display: inline-block;
     vertical-align: middle;
+}
+
+.main-header__brand img {
+    height: 100%;
 }
 
 .toggle-button {
@@ -77,11 +85,7 @@ body {
         display: none;
     }
 }
-  
 
-.main-header__brand img {
-    height: 100%;
-}
 
 .main-nav {
     display: inline-block;
