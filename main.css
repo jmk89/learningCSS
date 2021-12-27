@@ -1,5 +1,5 @@
 #product-overview {
-    background: linear-gradient(to top right, white 5%, transparent), url("images/cheem.jpg") left bottom/cover no-repeat border-box, lightblue;
+    background: linear-gradient(to top right, white 5%, transparent), url("images/cheem.jpg") center/cover no-repeat border-box, lightblue;
     /* background-image: url("cheem.jpg");
     background-size: cover;
     background-position: left bottom; 
@@ -19,13 +19,25 @@
     color:white;
     background-color: rgba(30, 143, 255, 0.37);
     font-family: 'Allan', cursive;
-    font-size: 3.5rem;
+    font-size: 2.75rem;
     position: absolute;
     bottom: 2.5rem;
     right: 0px; 
     padding: 0.5rem; 
     padding-left: 6rem;
     margin: 0px;
+}
+
+/* note: can use multiple media queries,
+list in ascending order since document is read top to bottom */
+@media (min-width: 40rem) {
+    #product-overview {
+        height:55vh;
+        background-position: 50% 25%;
+    }
+    .product-overview__slogan {
+        font-size: 3.5rem;
+    }
 }
 
 
@@ -35,27 +47,18 @@
     text-align: center;
 }
 
-.plan__list {
-    width: 80%; 
-    /* margin auto will center block level elements */
-    margin: auto; 
-    text-align: center;
-}
-
 .plan {
     background-color: rgb(161, 208, 255);
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
+    margin: 1rem 0rem;
+    width: 100%;
 }
 
 .plan--highlighted {
     background-color: dodgerblue;
     color: white;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    
 }
 
 .plan__annotation {
@@ -90,6 +93,23 @@
 
 .plan__feature {
     margin: 0.5rem 0;
+}
+
+@media (min-width: 40rem) {
+    .plan__list {
+        width: 100%; 
+        text-align: center;
+    }
+    .plan {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        min-width: 12rem;
+        max-width: 18rem;
+    }
+    .plan--highlighted {
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    }
 }
 
 #key-features {
