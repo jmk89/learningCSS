@@ -105,3 +105,21 @@ better used only to format text wrap around images */
     color: white
 }
 
+@media (min-width: 40rem) {
+    main {
+        margin: 3rem auto;
+        max-width: 1500px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .plan , #free {
+        border: 3px solid navy;
+    }
+    #free:hover,
+    #free:active,
+    .plan:hover,
+    .plan:active  {
+        border: 3px solid coral;
+}
+}

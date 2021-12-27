@@ -30,7 +30,7 @@
 
 /* note: can use multiple media queries,
 list in ascending order since document is read top to bottom */
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 60rem) {
     #product-overview {
         height:55vh;
         background-position: 50% 25%;
@@ -131,9 +131,8 @@ list in ascending order since document is read top to bottom */
 }
 
 .key-feature  {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+    display: block;
+    margin: 6rem 0rem;
 }
 
 .key-feature__image {
@@ -157,6 +156,18 @@ list in ascending order since document is read top to bottom */
     color: dodgerblue;
     font-size: 20px;
 } */
+
+@media (min-width: 40rem) {
+    .key-feature {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        max-width: 25rem;
+    }
+    .key-feature {
+        margin: 0rem;
+    }
+}
 
 
 .modal {

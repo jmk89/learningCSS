@@ -66,11 +66,17 @@ body {
   
   .toggle-button__bar {
     width: 100%;
-    height: 0.2rem;
+    height: 0.125rem;
     background: white;
     display: block;
-    margin: 0.6rem 0;
+    margin: 0.375rem 0;
   }
+
+  @media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+}
   
 
 .main-header__brand img {
@@ -86,7 +92,7 @@ body {
 
 .main-nav__item {
     /* displayed inline, but can be styled with block type properties like margins */
-    display: inline-block;
+    display: none;
     margin: 0px 16px
 }
 
@@ -112,6 +118,12 @@ body {
     padding: 8px 16px;
     border-radius: 8px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 40rem) {
+    .main-nav__item {
+        display: inline-block;
+    }
 }
 
 /* 
@@ -193,14 +205,14 @@ psuedo elements "::"
 
 .main-footer__links {
     list-style: none;
-    margin: 0;
     padding: 0;
     text-align: center;
 }
 
 .main-footer__link {
-    display: inline-block;
+    display: block;
     margin: 0 16px;
+    margin: 1rem 0rem;
 }
 
 .main-footer__link > a {
@@ -211,6 +223,13 @@ psuedo elements "::"
 .main-footer__link > a:hover,
 .main-footer__link > a:active {
     color: lightblue
+}
+
+@media (min-width: 40rem) {
+    .main-footer__link {
+        display: inline-block;
+        margin: 0rem 1rem;
+    }
 }
 
 .open {
