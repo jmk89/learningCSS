@@ -1,0 +1,84 @@
+main {
+    padding-top: 2rem;
+}
+
+.signup-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color:coral;
+}
+
+.signup-form {
+    padding: 1rem;
+}
+
+.signup-form label {
+    font-weight: bold;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form select {
+    display: block;
+    margin-top: 1rem;
+    width: 100%; 
+}
+
+
+
+/* .signup-form input[type="checkbox"] */
+.signup-form input[id*="terms"],
+.signup-form input[id*="terms"] + label {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* target all the inputs which don't have styles of checkbox */
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    border: 1px solid lightgray;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+}
+
+.signup-form input:not([type="checkbox"]):focus-visible,
+.signup-form select:not([type="checkbox"]):focus-visible {
+    outline: 2px solid dodgerblue;
+    background: rgb(238, 238, 238);
+}
+
+.signup-form input[type="checkbox"] {
+    border: 1px solid lightgrey;
+    background: white;
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.signup-form input[type="checkbox"]:checked {
+    border: 1px solid lightgrey;
+    background: coral;
+}
+
+.signup-form select.invalid,
+.signup-form input.invalid,
+.signup-form :invalid {
+    outline: 2px solid red !important;
+    border: 1px solid red !important;
+    background: rgb(255, 223, 210);
+}
+
+.signup-form button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .signup-form{
+        margin: auto;
+        width: 25rem;
+    }
+}
