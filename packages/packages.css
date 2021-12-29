@@ -1,6 +1,7 @@
 @font-face {
     font-family: "IBMPlexMono";
     src: url(../fonts/IBMPlexMono-Regular.ttf) format("truetype");
+    font-display: swap;
 }
 
 main {
@@ -73,8 +74,11 @@ of the entire .plan section */
     color: navy;
     padding: 1rem;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-    font-family: "Roboto";
+    /* font-family: "Roboto";
     font-style: italic;
+    font-size: 1.2rem; */
+    font: small-caps italic 1.2rem "Roboto";
+    text-shadow: 2px 2px 6px rgb(88, 88, 88);
 }
 
 /* Hacky way of floating the free plan to the right
