@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
+
+
+@font-face {
+    font-family: "IBMPlexMono";
+    src: url(../fonts/IBMPlexMono-Regular.ttf) format("truetype");
+}
 /* global selector */
-* {
+* { 
     /* oooh never knew about box-sizing */
     /* 
         box-sizing: border-box; 
@@ -11,6 +20,8 @@
 }
 
 body {
+    /* first look for Montserrat, then Verdana, then if neither are found
+    apply the browsers default sans-serif font */
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }

@@ -11,9 +11,9 @@ main {
     margin: auto;
 } */
 
-.testimonial:first-of-type {
-/* margin-top: 96px; */
-}
+/* .testimonial:first-of-type {
+margin-top: 96px;
+} */
 
 .testimonial__image-container {
     width: 100%;
