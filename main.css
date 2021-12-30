@@ -97,17 +97,22 @@ list in ascending order since document is read top to bottom */
 @media (min-width: 40rem) {
     .plan__list {
         width: 100%; 
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .plan {
-        display: inline-block;
-        width: 30%;
+        margin: 0 1rem;
+        display: flex;
+        flex-direction: column;
         vertical-align: middle;
-        min-width: 12rem;
         max-width: 18rem;
+        min-height: 28rem;
     }
     .plan--highlighted {
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+        min-height: 40rem;
     }
 }
 
@@ -157,10 +162,18 @@ list in ascending order since document is read top to bottom */
 } */
 
 @media (min-width: 40rem) {
+    .key-feature__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:flex-start;
+    }
     .key-feature {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 30%;
-        vertical-align: top;
         max-width: 25rem;
     }
     .key-feature {
