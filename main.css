@@ -185,7 +185,7 @@ list in ascending order since document is read top to bottom */
 .modal {
     position: fixed;
     opacity: 0;
-    transform: translateY(-3rem);
+    transform: translateY(-8rem);
     z-index: 200;
     top: 20%;
     left: 30%;
@@ -194,7 +194,7 @@ list in ascending order since document is read top to bottom */
     padding: 1rem;
     border: 1px solid #ccc;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-    transition: opacity .5s ease-out, transform 750ms ease-out; 
+    transition: opacity 1s cubic-bezier(0.83, 0, 0.17, 1), transform 750ms cubic-bezier(0.83, 0, 0.17, 1); 
   }
   
   .modal__title {
