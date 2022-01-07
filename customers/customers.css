@@ -18,12 +18,15 @@ margin-top: 96px;
 .testimonial__image-container {
     width: 100%;
     /* max-width: 580px; */
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, .5)
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .5);
+    transform: skewX(12.5deg);
+    overflow: hidden;
 }
 
 .testimonial__image {
     width: 100%;
     vertical-align: top;
+    transform: skewX(-12.5deg) scale(1.5);
 }
 
 .testimonial__info {
