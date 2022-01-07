@@ -26,14 +26,14 @@ if( noButton ) {
 
 backdrop.addEventListener('click', () => {
     // mobileNav.style.display = 'none';
-    mobileNav.classList.remove('open');
+    mobileNav.classList.remove('open__mobile-nav');
     closeModal();
 })
 
 toggleButton.addEventListener('click', () => {
     // mobileNav.style.display = 'block';
     backdrop.style.display = 'block';
-    mobileNav.classList.add('open');
+    mobileNav.classList.add('open__mobile-nav');
     setTimeout( () => {
         backdrop.classList.add("open");
     }, 10);

@@ -172,15 +172,17 @@ psuedo elements "::"
 }
 
 .mobile-nav {
-    display: none;
+    /* display: none; */
     position: fixed;
+    opacity: 0;
     z-index: 101;
     top: 0;
-    left: 0;
+    transform: translateX(-16rem);
     background: white;
     width: 70%;
     height: 100vh;
     background-color: dodgerblue;
+    transition: opacity .4s cubic-bezier(0.83, 0, 0.17, 1), transform .4s cubic-bezier(0.83, 0, 0.17, 1);
   }
   
   .mobile-nav__items {
@@ -277,4 +279,9 @@ psuedo elements "::"
     display: block !important;
     opacity: 1 !important;
     transform: translateY(0) !important;
+}
+
+.open__mobile-nav {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
 }
