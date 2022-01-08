@@ -135,6 +135,13 @@ main {
     padding: .75rem 0;
 }
 
+.main-nav__item--cta {
+    /* animation name, animate for 200ms, wait 3s,  
+    play it forward and backward 4,
+    forwards = stay in final state when done*/
+    animation: wiggle 200ms 3s 7 alternate forwards ;
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
     color: white;
@@ -143,6 +150,7 @@ main {
     border-radius: 8px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
+
 
 @media (min-width: 40rem) {
     .main-nav__item {
@@ -284,4 +292,13 @@ psuedo elements "::"
 .open__mobile-nav {
     opacity: 1 !important;
     transform: translateX(0) !important;
+}
+
+@keyframes wiggle {
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(10deg);
+    }
 }
