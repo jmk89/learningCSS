@@ -1,143 +1,154 @@
 @font-face {
-    font-family: "IBMPlexMono";
-    src: url(../fonts/IBMPlexMono-Regular.ttf) format("truetype");
-    font-display: swap;
+  font-family: 'IBMPlexMono';
+  src: url(../fonts/IBMPlexMono-Regular.ttf) format('truetype');
+  font-display: swap;
 }
 
 main {
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 .background {
-    background-image: url("../images/groupcheams.jpeg");
-    background-size:cover;
-    background-position:center;
-    filter:blur(3px) grayscale(80%);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
+  background-image: url('../images/groupcheams.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px) grayscale(80%);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
 }
 
 .plan {
-    border: 3px solid navy;
-    border-left: none;
-    margin: 1.5rem 0;
-    width: 80%;
-    position: relative;
-    overflow: hidden;
+  border: 3px solid navy;
+  border-left: none;
+  margin: 1.5rem 0;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
 }
 
 .plan:hover,
 .plan:active {
-    border: 3px solid coral;
-    border-left: none;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  border: 3px solid coral;
+  border-left: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  animation: push-plan .5s cubic-bezier(.45,1.25,.8,1.39) forwards;
 }
 
 /* setting block for a makes it take the space
 of the entire .plan section */
 .plan a {
-    text-decoration: none;
-    display: block;
-    padding: 2rem;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
 }
 
 .plan__name {
-    color: navy;
-    font-weight: bold;
-    text-decoration: underline white;
+  color: navy;
+  font-weight: bold;
+  text-decoration: underline white;
 }
 
 .plan__badge {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding: 0.5rem;
-    color: white;
-    border-radius: 8px;
-    background-color: coral;
-    font-size: 0.75rem;
-    z-index: 10;
-    font-family: "IBMPlexMono";
-    transform: rotateZ(45deg) translateY(-1.5rem) translateX(4rem);
-    transform-origin: center;
-    width: 12rem;
-    text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 8px;
+  background-color: coral;
+  font-size: 0.75rem;
+  z-index: 10;
+  font-family: 'IBMPlexMono';
+  transform: rotateZ(45deg) translateY(-1.5rem) translateX(4rem);
+  transform-origin: center;
+  width: 12rem;
+  text-align: center;
 }
 
 .plan__description {
-    color: grey;
-    font-weight: bold;
+  color: grey;
+  font-weight: bold;
 }
 
 .plan__details {
-    border: 3px solid peachpuff;
-    border-radius: 8px;
-    background-color: white;
-    color: navy;
-    padding: 1rem;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-    /* font-family: "Roboto";
+  border: 3px solid peachpuff;
+  border-radius: 8px;
+  background-color: white;
+  color: navy;
+  padding: 1rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  /* font-family: "Roboto";
     font-style: italic;
     font-size: 1.2rem; */
-    font: small-caps italic 1.2rem "Roboto";
-    text-shadow: 2px 2px 6px rgb(88, 88, 88);
+  font: small-caps italic 1.2rem 'Roboto';
+  text-shadow: 2px 2px 6px rgb(88, 88, 88);
 }
 
 /* Hacky way of floating the free plan to the right
 ...float generally shouldn't be used to position stuff on page,
 better used only to format text wrap around images */
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
 #plus {
-    background-color: rgba(161, 208, 255, 0.7);
+  background-color: rgba(161, 208, 255, 0.7);
 }
 
 #free {
-    background-color: rgba(213, 234, 255, 0.7);
-    border-right: none;
-    border-left: 3px solid navy;
-    float: right;
-    text-align: right;
+  background-color: rgba(213, 234, 255, 0.7);
+  border-right: none;
+  border-left: 3px solid navy;
+  float: right;
+  text-align: right;
 }
 
 #free:hover,
 #free:active {
-    border-left-color: coral;
+  border-left-color: coral;
 }
 
 #premium {
-    background-color: dodgerblue;
+  background-color: dodgerblue;
 }
 
 #premium .plan__name {
-    color: navy;
-    font-size: 2.25rem;
+  color: navy;
+  font-size: 2.25rem;
 }
 
 #premium .plan__description {
-    color: white
+  color: white;
 }
 
 @media (min-width: 40rem) {
-    main {
-        margin: 0rem auto;
-        max-width: 1500px;
-    }
+  main {
+    margin: 0rem auto;
+    max-width: 1500px;
+  }
 }
 
 @media (min-width: 1500px) {
-    .plan , #free {
-        border: 3px solid navy;
-    }
-    #free:hover,
-    #free:active,
-    .plan:hover,
-    .plan:active  {
-        border: 3px solid coral;
+  .plan,
+  #free {
+    border: 3px solid navy;
+  }
+  #free:hover,
+  #free:active,
+  .plan:hover,
+  .plan:active {
+    border: 3px solid coral;
+  }
 }
+
+@keyframes push-plan {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
