@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
 
+:root {
+    --primary-blue: dodgerblue;
+    --primary-orange: coral;
+}
 
 
 /* global selector */
@@ -51,7 +55,7 @@ main {
 }
 
 .main-header {
-    background-color: dodgerblue;
+    background-color: var(--primary-blue);
     padding: 10px 20px;
     width: 100%;
     position: fixed;
@@ -143,7 +147,7 @@ main {
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
     color: white;
-    background:coral;
+    background: var(--primary-orange);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
@@ -183,11 +187,11 @@ psuedo elements "::"
     opacity: 0;
     z-index: 101;
     top: 0;
-    transform: translateX(-16rem);
+    transform: translateX(-48rem);
     background: white;
     width: 70%;
     height: 100vh;
-    background-color: dodgerblue;
+    background-color: var(--primary-blue);
     transition: opacity .4s cubic-bezier(0.83, 0, 0.17, 1), transform .4s cubic-bezier(0.83, 0, 0.17, 1);
   }
   
@@ -241,7 +245,7 @@ psuedo elements "::"
 }
 
 .main-footer {
-    background: dodgerblue;
+    background: var(--primary-blue);
     padding: 2rem;
     margin-top: 3rem;
     grid-area: footer;
