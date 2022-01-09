@@ -62,6 +62,9 @@ main {
     top: 0px;
     z-index: 15;
     height: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display:flex;
     /* align on cross axis */
     align-items: center;
