@@ -136,10 +136,8 @@ main {
 }
 
 .main-nav__item--cta {
-    /* animation name, animate for 200ms, wait 3s,  
-    play it forward and backward 4,
-    forwards = stay in final state when done*/
-    animation: wiggle 200ms 3s 7 alternate forwards ;
+    /* ease out between key frame steps */
+    animation: wiggle 400ms 3s 8 ease-out none ;
 }
 
 .main-nav__item--cta a,
@@ -295,10 +293,13 @@ psuedo elements "::"
 }
 
 @keyframes wiggle {
-    from {
+    0% {
         transform: rotateZ(0);
+    } 
+    50% {
+        transform: rotateZ(-10deg);
     }
-    to {
+    100% {
         transform: rotateZ(10deg);
     }
 }
